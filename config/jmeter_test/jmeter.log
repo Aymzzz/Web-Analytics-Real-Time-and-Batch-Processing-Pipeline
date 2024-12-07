@@ -1,0 +1,49 @@
+2024/11/25 23:24:39 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: Loading user properties from: /usr/share/jmeter/bin/user.properties 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: Loading system properties from: /usr/share/jmeter/bin/system.properties 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: Copyright (c) 1998-2015 The Apache Software Foundation 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: Version 2.13.19691222 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: java.version=11.0.25 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: java.vm.name=OpenJDK 64-Bit Server VM 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: os.name=Linux 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: os.arch=amd64 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: os.version=6.8.0-49-generic 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: JMeterHome=/usr/share/jmeter 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: user.dir  =/home/ayms/Desktop/project-root/config 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: PWD       =/home/ayms/Desktop/project-root/config 
+2024/11/25 23:24:39 INFO  - jmeter.JMeter: IP: 10.126.37.135 Name: ayms FullName: ayms 
+2024/11/25 23:24:39 INFO  - jmeter.services.FileServer: Default base='/home/ayms/Desktop/project-root/config' 
+2024/11/25 23:24:39 INFO  - jmeter.services.FileServer: Set new base='/home/ayms/Desktop/project-root/config' 
+2024/11/25 23:24:39 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2024/11/25 23:24:39 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.8 
+2024/11/25 23:24:39 INFO  - jmeter.save.SaveService: Using SaveService properties file version 1656252 
+2024/11/25 23:24:39 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2024/11/25 23:24:39 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2024/11/25 23:24:39 INFO  - jmeter.save.SaveService: Loading file: five_products_test_plan.jmx 
+2024/11/25 23:24:39 ERROR - jmeter.JMeter: Error in NonGUIDriver com.thoughtworks.xstream.security.ForbiddenClassException: org.apache.jmeter.save.ScriptWrapper
+	at com.thoughtworks.xstream.security.NoTypePermission.allows(NoTypePermission.java:26)
+	at com.thoughtworks.xstream.mapper.SecurityMapper.realClass(SecurityMapper.java:74)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:125)
+	at org.apache.jmeter.save.SaveService$XStreamWrapper$1.realClass(SaveService.java:94)
+	at com.thoughtworks.xstream.mapper.MapperWrapper.realClass(MapperWrapper.java:125)
+	at com.thoughtworks.xstream.mapper.CachingMapper.realClass(CachingMapper.java:47)
+	at com.thoughtworks.xstream.core.util.HierarchicalStreams.readClassType(HierarchicalStreams.java:29)
+	at com.thoughtworks.xstream.core.TreeUnmarshaller.start(TreeUnmarshaller.java:133)
+	at com.thoughtworks.xstream.core.AbstractTreeMarshallingStrategy.unmarshal(AbstractTreeMarshallingStrategy.java:32)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1392)
+	at com.thoughtworks.xstream.XStream.unmarshal(XStream.java:1377)
+	at com.thoughtworks.xstream.XStream.fromXML(XStream.java:1262)
+	at org.apache.jmeter.save.SaveService.readTree(SaveService.java:559)
+	at org.apache.jmeter.save.SaveService.loadTree(SaveService.java:537)
+	at org.apache.jmeter.JMeter.runNonGui(JMeter.java:751)
+	at org.apache.jmeter.JMeter.startNonGui(JMeter.java:738)
+	at org.apache.jmeter.JMeter.start(JMeter.java:397)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:264)
+

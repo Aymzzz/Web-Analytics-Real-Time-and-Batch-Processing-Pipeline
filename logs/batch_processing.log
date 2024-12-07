@@ -1,0 +1,54 @@
+2024-12-07 01:51:14,428 - INFO - Connecting to Cassandra...
+2024-12-07 01:51:14,432 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2024-12-07 01:51:14,436 - WARNING - Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-12-07 01:51:14,438 - WARNING - Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-12-07 01:51:14,445 - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-12-07 01:51:14,486 - INFO - Clearing all results from the RESULTS table...
+2024-12-07 01:51:14,542 - INFO - All results cleared.
+2024-12-07 01:51:14,542 - INFO - Fetching all logs...
+2024-12-07 01:51:14,567 - WARNING - Server warning: Read 1327 live rows and 1327 tombstone cells for query SELECT * FROM web_analytics.log LIMIT 5000 ALLOW FILTERING; token 1938192829213294213 (see tombstone_warn_threshold)
+2024-12-07 01:51:14,572 - INFO - Fetched logs for 1 dates.
+2024-12-07 01:51:14,572 - INFO - Aggregating logs across all dates...
+2024-12-07 01:51:14,573 - INFO - Storing results in Cassandra...
+2024-12-07 01:51:14,573 - INFO - Top 3 pages for date 2024-12-07: [('/product2', 300), ('/product1', 300), ('/product3', 297)]
+2024-12-07 01:51:14,576 - INFO - Stored result: /product2 with 300 visits for date 2024-12-07
+2024-12-07 01:51:14,579 - INFO - Stored result: /product1 with 300 visits for date 2024-12-07
+2024-12-07 01:51:14,581 - INFO - Stored result: /product3 with 297 visits for date 2024-12-07
+2024-12-07 01:51:14,581 - INFO - Batch processing completed successfully.
+2024-12-07 01:54:39,806 - INFO - Connecting to Cassandra...
+2024-12-07 01:54:39,810 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2024-12-07 01:54:39,813 - WARNING - Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-12-07 01:54:39,815 - WARNING - Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-12-07 01:54:39,823 - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-12-07 01:54:39,861 - INFO - Fetching existing results from the RESULTS table...
+2024-12-07 01:54:39,864 - INFO - Fetched 3 existing results.
+2024-12-07 01:54:39,864 - INFO - Fetching logs from the LOG table...
+2024-12-07 01:54:39,881 - WARNING - Server warning: Read 1327 live rows and 1327 tombstone cells for query SELECT * FROM web_analytics.log LIMIT 5000 ALLOW FILTERING; token 1938192829213294213 (see tombstone_warn_threshold)
+2024-12-07 01:54:39,885 - INFO - Fetched logs for 1 dates.
+2024-12-07 01:54:39,885 - INFO - Aggregating results...
+2024-12-07 01:54:39,886 - INFO - Aggregated results for 5 page-date combinations.
+2024-12-07 01:54:39,886 - INFO - Storing aggregated results in Cassandra...
+2024-12-07 01:54:39,943 - INFO - Stored result: /product1 with 600 visits for date 2024-12-07
+2024-12-07 01:54:39,944 - INFO - Stored result: /product2 with 600 visits for date 2024-12-07
+2024-12-07 01:54:39,947 - INFO - Stored result: /product3 with 594 visits for date 2024-12-07
+2024-12-07 01:54:39,948 - INFO - Stored result: /product4 with 284 visits for date 2024-12-07
+2024-12-07 01:54:39,950 - INFO - Stored result: /product5 with 146 visits for date 2024-12-07
+2024-12-07 01:54:39,950 - INFO - Batch processing completed successfully.
+2024-12-07 01:58:29,250 - INFO - Connecting to Cassandra...
+2024-12-07 01:58:29,253 - WARNING - Cluster.__init__ called with contact_points specified, but no load_balancing_policy. In the next major version, this will raise an error; please specify a load-balancing policy. (contact_points = ['127.0.0.1'], lbp = None)
+2024-12-07 01:58:29,256 - WARNING - Downgrading core protocol version from 66 to 65 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-12-07 01:58:29,257 - WARNING - Downgrading core protocol version from 65 to 5 for 127.0.0.1:9042. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+2024-12-07 01:58:29,263 - INFO - Using datacenter 'datacenter1' for DCAwareRoundRobinPolicy (via host '127.0.0.1:9042'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+2024-12-07 01:58:29,294 - INFO - Fetching existing results from the RESULTS table...
+2024-12-07 01:58:29,297 - INFO - Fetched 5 existing results.
+2024-12-07 01:58:29,297 - INFO - Fetching logs from the LOG table...
+2024-12-07 01:58:29,311 - INFO - Fetched logs for 1 dates.
+2024-12-07 01:58:29,311 - INFO - Aggregating results...
+2024-12-07 01:58:29,312 - INFO - Aggregated results for 5 page-date combinations.
+2024-12-07 01:58:29,312 - INFO - Storing aggregated results in Cassandra...
+2024-12-07 01:58:29,365 - INFO - Stored result: /product1 with 4753 visits for date 2024-12-07
+2024-12-07 01:58:29,367 - INFO - Stored result: /product2 with 2795 visits for date 2024-12-07
+2024-12-07 01:58:29,368 - INFO - Stored result: /product3 with 2016 visits for date 2024-12-07
+2024-12-07 01:58:29,370 - INFO - Stored result: /product4 with 1142 visits for date 2024-12-07
+2024-12-07 01:58:29,372 - INFO - Stored result: /product5 with 407 visits for date 2024-12-07
+2024-12-07 01:58:29,372 - INFO - Batch processing completed successfully.
