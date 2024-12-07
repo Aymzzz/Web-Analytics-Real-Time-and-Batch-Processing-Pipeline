@@ -119,7 +119,7 @@ The real-time pipeline runs the following components:
 Run the entire pipeline (simulator, producer, consumer, and real-time processing) by executing the following:
 
 ```bash
-python3 scripts/run_pipeline.py
+python3 scripts/run.py
 ```
 
 ### Batch Processing
