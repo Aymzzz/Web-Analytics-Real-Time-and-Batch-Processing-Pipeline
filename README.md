@@ -185,13 +185,6 @@ This will show the top N most visited pages for each date, with the `last_proces
 - **Missing Tables**: If the `LOG` or `RESULTS` tables are missing, use the provided `cql` scripts to create them.
 
 ---
-
-## License
-
-This project is licensed under the MIT License.
-
----
-
-### **Notes for Future Development**
+## **Notes for Future Development**
 - This pipeline is scalable by adding more consumers and producers.
 - The batch processing logic can be extended to support different aggregation types (e.g., hourly, weekly).
