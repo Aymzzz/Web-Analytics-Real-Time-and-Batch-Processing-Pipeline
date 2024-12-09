@@ -2,6 +2,18 @@
 
 This project implements a **real-time web analytics processing pipeline** using **Kafka** for messaging, **Cassandra** for storage, and **Python** for processing the logs. The pipeline aggregates page visit data from raw logs in real time and batch processes older logs periodically, while ensuring no data is lost or overwritten.
 
+# Project Team
+
+The project team comprises **Aymane Sbai** and **Imane Guessous**. The contributions and responsibilities of each teammate are detailed in the following table:
+
+| **Teammate**      | **Key Contributions and Responsibilities**                                                                                                                                     |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Imane Guessous** | - Designing and implementing an optimized Cassandra database schema<br> - Developing the batch processing pipeline for large-scale data<br> - Compiling and refining the final project report |
+| **Aymane Sbai**    | - Architecting and implementing the real-time data processing pipeline<br> - Configuring and optimizing the NGINX server for load balancing and logging<br> - Setting up, deploying, and managing the Kafka messaging system<br> - Developing the project demo video |
+
+**Table 1:** Distribution of roles and contributions among team members.
+
+
 ## Project Overview
 
 The project consists of two major components:
